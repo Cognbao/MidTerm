@@ -4,6 +4,22 @@ import java.util.*;
 
 // Model
 public class Model {
+    private String text;
+
+    // Constructor
+    public Model() {
+        text = ""; // Initialize with empty text
+    }
+
+    // Getter method to retrieve the text data
+    public String getText() {
+        return text;
+    }
+
+    // Setter method to update the text data
+    public void setText(String newText) {
+        text = newText;
+    }
     private List<String> lines = new ArrayList<>();
 
     public void addLine(String line) {
